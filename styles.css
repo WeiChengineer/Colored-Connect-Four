@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: #808080; 
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(11, 50px);
+    grid-template-rows: repeat(10, 50px);
+    gap: 10px;
+}
+
+#gameBoard div {
+    width: 50px;
+    height: 50px;
+    background-color: #ddd;
+    border-radius: 50%;
+}
+
+#gameInfo {
+    margin-top: 20px;
+    text-align: center;
+}
+
+#resetButton {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#resetButton:hover {
+    background-color: #0056b3;
+}
+
+footer {
+    margin-top: 30px;
+    color: #666;
+}
+
+@keyframes grow {
+    from { transform: scale(1); }
+    to { transform: scale(5); }
+}
+
+#winningMessage {
+    position: fixed;
+    top: 50%;
+    left: 45%;
+    transform: translate(-80%, -20%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 20px;
+    z-index: 1000;
+    font-size: 2em;
+    border-radius: 10px;
+    animation: grow 3s forwards;
+}
+
+
+#nameForm {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#nameForm input[type="text"] {
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#nameForm button {
+    padding: 5px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#nameForm button:hover {
+    background-color: #0056b3;
+}
+
+#welcomeMessage {
+    margin: 20px auto;
+    text-align: center;
+    font-size: 1.2em;
+    color: pink; 
+    max-width: 600px; 
+}
+
+#gameTitle span {
+    display: inline-block;
+    font-size: 2em;
+}
+

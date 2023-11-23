@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect Four Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="gameTitle">
+        <span>C</span><span>o</span><span>l</span><span>o</span><span>r</span><span>e</span><span>d</span>
+        <span>&nbsp;</span> 
+        <span>C</span><span>o</span><span>n</span><span>n</span><span>e</span><span>c</span><span>t</span>
+        <span>&nbsp;</span> 
+        <span>F</span><span>o</span><span>u</span><span>r</span>
+    </h1>
+
+    <main>
+        <section id="nameForm">
+            <p id="welcomeMessage">
+                Welcome to Colored Connect Four! The goal is to try and connect 4... 
+            </p>
+            <p id="welcomeMessage">
+                However, the color of your tiles will be randomized each round to cause confusion and frustration. 
+            </p>
+            <p id="welcomeMessage">
+                Try to memorize where your pieces were placed or just hope that your opponent is lazier than you are! Good luck and have fun!
+            </p>
+            <input type="text" id="player1Name" placeholder="Player 1 Name">
+            <input type="text" id="player2Name" placeholder="Player 2 Name">
+            <button id="startGameButton">Start Game</button>
+        </section>
+        <section id="gameBoard">
+            
+        </section>
+        <section id="gameInfo">
+            <p id="playerTurn">Player 1's Turn</p>
+            <button id="resetButton">Reset Game</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created by WeiChengineer</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <audio id="winningSound" src="winning-sound.mp3" preload="auto"></audio>
+
+</body>
+</html>
